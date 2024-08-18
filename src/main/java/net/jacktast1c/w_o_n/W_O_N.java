@@ -1,6 +1,8 @@
 package net.jacktast1c.w_o_n;
 
 import com.mojang.logging.LogUtils;
+import net.jacktast1c.w_o_n.item.ModCreativeModeTabs;
+import net.jacktast1c.w_o_n.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,13 +29,14 @@ public class W_O_N
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the commonSetup method for modloading
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
     }
 
