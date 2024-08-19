@@ -1,6 +1,7 @@
 package net.jacktast1c.w_o_n;
 
 import com.mojang.logging.LogUtils;
+import net.jacktast1c.w_o_n.block.ModBlocks;
 import net.jacktast1c.w_o_n.item.ModCreativeModeTabs;
 import net.jacktast1c.w_o_n.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,7 +32,11 @@ public class W_O_N
 
         ModCreativeModeTabs.register(modEventBus);
 
+        ModBlocks.register(modEventBus);
+
         ModItems.register(modEventBus);
+
+
 
         modEventBus.addListener(this::commonSetup);
 
