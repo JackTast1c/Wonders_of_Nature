@@ -26,6 +26,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.REDWOOD_LEAVES.get(), block ->
             createLeavesDrops(block, ModBlocks.REDWOOD_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change this shi' to the sapling
 
+        this.dropSelf(ModBlocks.WILLOW_LOG.get());
+        this.dropSelf(ModBlocks.WILLOW_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_WILLOW_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_WILLOW_WOOD.get());
+        this.dropSelf(ModBlocks.WILLOW_PLANKS.get());
+
+        this.add(ModBlocks.WILLOW_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WILLOW_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change this shi' to the sapling
+
     }
 
     @Override

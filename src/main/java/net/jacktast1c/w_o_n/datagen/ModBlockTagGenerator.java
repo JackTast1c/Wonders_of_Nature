@@ -25,9 +25,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.REDWOOD_LOG.get())
                 .add(ModBlocks.REDWOOD_WOOD.get())
                 .add(ModBlocks.STRIPPED_REDWOOD_LOG.get())
-                .add(ModBlocks.STRIPPED_REDWOOD_WOOD.get());
+                .add(ModBlocks.STRIPPED_REDWOOD_WOOD.get())
+                .add(ModBlocks.WILLOW_LOG.get())
+                .add(ModBlocks.WILLOW_WOOD.get())
+                .add(ModBlocks.STRIPPED_WILLOW_LOG.get())
+                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.REDWOOD_PLANKS.get());
+                .add(ModBlocks.REDWOOD_PLANKS.get())
+                .add(ModBlocks.WILLOW_PLANKS.get());
     }
 }

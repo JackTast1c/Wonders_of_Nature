@@ -23,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         //blockWithItem(ModBlocks.blablabla);
 
+        //Redwood Blockset
         logBlock(((RotatedPillarBlock) ModBlocks.REDWOOD_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.REDWOOD_WOOD.get()), blockTexture(ModBlocks.REDWOOD_LOG.get()), blockTexture(ModBlocks.REDWOOD_LOG.get()));
 
@@ -31,14 +32,29 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_REDWOOD_WOOD.get()), blockTexture(ModBlocks.STRIPPED_REDWOOD_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_REDWOOD_LOG.get()));
 
-
-        //Redwood Blockset
         blockItem(ModBlocks.REDWOOD_LOG);
         blockItem(ModBlocks.REDWOOD_WOOD);
         blockItem(ModBlocks.STRIPPED_REDWOOD_LOG);
         blockItem(ModBlocks.STRIPPED_REDWOOD_WOOD);
         blockWithItem(ModBlocks.REDWOOD_PLANKS);
         leavesBlock(ModBlocks.REDWOOD_LEAVES);
+
+
+        //Willow Blockset
+        logBlock(((RotatedPillarBlock) ModBlocks.WILLOW_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.WILLOW_WOOD.get()), blockTexture(ModBlocks.WILLOW_LOG.get()), blockTexture(ModBlocks.WILLOW_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_WILLOW_LOG.get()), blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()),
+                new ResourceLocation(W_O_N.MOD_ID, "block/stripped_willow_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_WILLOW_WOOD.get()), blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()));
+
+        blockItem(ModBlocks.WILLOW_LOG);
+        blockItem(ModBlocks.WILLOW_WOOD);
+        blockItem(ModBlocks.STRIPPED_WILLOW_LOG);
+        blockItem(ModBlocks.STRIPPED_WILLOW_WOOD);
+        blockWithItem(ModBlocks.WILLOW_PLANKS);
+        leavesBlock(ModBlocks.WILLOW_LEAVES);
 
     }
 

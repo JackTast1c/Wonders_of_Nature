@@ -23,9 +23,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.REDWOOD_LOG.get().asItem())
                 .add(ModBlocks.REDWOOD_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_REDWOOD_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_REDWOOD_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_REDWOOD_WOOD.get().asItem())
+                .add(ModBlocks.WILLOW_LOG.get().asItem())
+                .add(ModBlocks.WILLOW_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_WILLOW_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.REDWOOD_PLANKS.get().asItem());
+                .add(ModBlocks.REDWOOD_PLANKS.get().asItem())
+                .add(ModBlocks.WILLOW_PLANKS.get().asItem());
     }
 }
