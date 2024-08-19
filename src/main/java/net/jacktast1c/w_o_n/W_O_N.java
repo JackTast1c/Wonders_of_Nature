@@ -32,9 +32,9 @@ public class W_O_N
 
         ModCreativeModeTabs.register(modEventBus);
 
-        ModBlocks.register(modEventBus);
-
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
 
 

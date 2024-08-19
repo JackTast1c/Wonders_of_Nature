@@ -1,3 +1,10 @@
 {
-  "creativetab.won_tab": "Wonders of Nature Tab"
+  "creativetab.won_tab": "Wonders of Nature Tab",
+
+  "block.w_o_n.redwood_log": "Redwood Log",
+  "block.w_o_n.redwood_wood": "Redwood Wood",
+  "block.w_o_n.stripped_redwood_log": "Stripped Redwood Log",
+  "block.w_o_n.stripped_redwood_wood": "Stripped Redwood Wood",
+  "block.w_o_n.redwood_planks": "Redwood Planks",
+  "block.w_o_n.redwood_leaves": "Redwood Leaves"
 }

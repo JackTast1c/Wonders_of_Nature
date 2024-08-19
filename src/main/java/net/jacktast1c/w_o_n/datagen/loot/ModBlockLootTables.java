@@ -17,6 +17,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        this.dropSelf(ModBlocks.REDWOOD_LOG.get());
+        this.dropSelf(ModBlocks.REDWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_REDWOOD_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_REDWOOD_WOOD.get());
+        this.dropSelf(ModBlocks.REDWOOD_PLANKS.get());
+
+        this.add(ModBlocks.REDWOOD_LEAVES.get(), block ->
+            createLeavesDrops(block, ModBlocks.REDWOOD_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change this shi' to the sapling
 
     }
 
