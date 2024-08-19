@@ -27,7 +27,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock(((RotatedPillarBlock) ModBlocks.REDWOOD_WOOD.get()), blockTexture(ModBlocks.REDWOOD_LOG.get()), blockTexture(ModBlocks.REDWOOD_LOG.get()));
 
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_REDWOOD_LOG.get()), blockTexture(ModBlocks.STRIPPED_REDWOOD_LOG.get()),
-                new ResourceLocation(W_O_N.MOD_ID, "block/stripped_pine_log_top"));
+                new ResourceLocation(W_O_N.MOD_ID, "block/stripped_redwood_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_REDWOOD_WOOD.get()), blockTexture(ModBlocks.STRIPPED_REDWOOD_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_REDWOOD_LOG.get()));
 

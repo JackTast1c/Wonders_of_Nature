@@ -107,7 +107,7 @@ minecraft {
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                "${mod_id}" {
+                "w_o_n" {
                     source sourceSets.main
                 }
             }
