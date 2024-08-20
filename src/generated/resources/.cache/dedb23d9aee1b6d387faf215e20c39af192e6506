@@ -1,0 +1,5 @@
+// 1.20.1	2024-08-20T14:48:14.6020858	Tags for minecraft:block mod id w_o_n
+a9ae29ce67e3a8ca6c83c016726cd2b44a0ae000 data/minecraft/tags/blocks/fences.json
+657c6e106f097fe1e42a980f9f4bf3a8121e4239 data/minecraft/tags/blocks/fence_gates.json
+5689c64c738561d70d71cf79ed7ae3bbc8d1a76b data/minecraft/tags/blocks/logs_that_burn.json
+727fdbd605366924d1ec2db8def94ecda5afb182 data/minecraft/tags/blocks/planks.json

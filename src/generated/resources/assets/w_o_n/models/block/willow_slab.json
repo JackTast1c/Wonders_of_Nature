@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "w_o_n:block/willow_planks",
+    "side": "w_o_n:block/willow_planks",
+    "top": "w_o_n:block/willow_planks"
+  }
+}
