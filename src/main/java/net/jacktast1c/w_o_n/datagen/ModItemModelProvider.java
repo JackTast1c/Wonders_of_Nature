@@ -27,6 +27,30 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.REDWOOD_FENCE, ModBlocks.REDWOOD_PLANKS);
         buttonItem(ModBlocks.REDWOOD_BUTTON, ModBlocks.REDWOOD_PLANKS);
 
+        evenSimplerBlockItem(ModBlocks.REDWOOD_STAIRS);
+        evenSimplerBlockItem(ModBlocks.REDWOOD_SLAB);
+        evenSimplerBlockItem(ModBlocks.REDWOOD_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.REDWOOD_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.REDWOOD_TRAPDOOR);
+
+
+
+        simpleBlockItem(ModBlocks.WILLOW_DOOR);
+
+        fenceItem(ModBlocks.WILLOW_FENCE, ModBlocks.WILLOW_PLANKS);
+        buttonItem(ModBlocks.WILLOW_BUTTON, ModBlocks.WILLOW_PLANKS);
+
+        evenSimplerBlockItem(ModBlocks.WILLOW_STAIRS);
+        evenSimplerBlockItem(ModBlocks.WILLOW_SLAB);
+        evenSimplerBlockItem(ModBlocks.WILLOW_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.WILLOW_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.WILLOW_TRAPDOOR);
+
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(W_O_N.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 
     public void trapdoorItem(RegistryObject<Block> block) {
