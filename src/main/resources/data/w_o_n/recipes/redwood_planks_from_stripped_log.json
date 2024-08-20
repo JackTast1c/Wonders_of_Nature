@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "w_o_n:stripped_redwood_log"
+    }
+  ],
+  "result": {
+    "item": "w_o_n:redwood_planks",
+    "count": 4
+  }
+}
