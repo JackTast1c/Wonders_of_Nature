@@ -45,6 +45,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STRIPPED_WILLOW_LOG.get());
                         output.accept(ModBlocks.STRIPPED_WILLOW_WOOD.get());
                         output.accept(ModBlocks.WILLOW_LEAVES.get());
+                        output.accept(ModBlocks.WILLOW_SAPLING.get());
                         output.accept(ModBlocks.WILLOW_PLANKS.get());
                         output.accept(ModBlocks.WILLOW_STAIRS.get());
                         output.accept(ModBlocks.WILLOW_SLAB.get());
@@ -54,7 +55,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WILLOW_FENCE_GATE.get());
                         output.accept(ModBlocks.WILLOW_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.WILLOW_BUTTON.get());
-                        //output.accept(ModBlocks.WILLOW_SAPLING.get());
                     })
                     .build());
 

@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-20T14:48:14.6030827	Loot Tables
+// 1.20.1	2024-08-21T23:22:26.7622953	Loot Tables
 97ba4b69e3ef8864a2e0bc2d577b1a0421128880 data/w_o_n/loot_tables/blocks/redwood_button.json
 2e556777b66a5ab14026fd33e66349781f7ea485 data/w_o_n/loot_tables/blocks/redwood_door.json
 58ec61bc786f8d86709b6e1bef074e0eb6d537d0 data/w_o_n/loot_tables/blocks/redwood_fence.json
@@ -19,10 +19,11 @@ f1f66ac1c667771137395d6de8cad843a91260d4 data/w_o_n/loot_tables/blocks/stripped_
 ae57cd496f32128e834715920e5629a38c1185bf data/w_o_n/loot_tables/blocks/willow_door.json
 81b97555222ef3c19877d5450c487387ae1f8179 data/w_o_n/loot_tables/blocks/willow_fence.json
 5e2d6ad8b315f36941c610aaf520f3eb2450ba59 data/w_o_n/loot_tables/blocks/willow_fence_gate.json
-1758ce9ff3dcc73e399e79fe800d659ba8bcbade data/w_o_n/loot_tables/blocks/willow_leaves.json
+867f0cef8ab10a0dc1f97718440cf5ca1ec6b310 data/w_o_n/loot_tables/blocks/willow_leaves.json
 e1904176264d2cd090cbf2907acb7ed55fb80ccf data/w_o_n/loot_tables/blocks/willow_log.json
 c06e312095ea6221216348b60514acdebba79aaf data/w_o_n/loot_tables/blocks/willow_planks.json
 e31868ae99aaea1948c4a05dd5882f2a8c6ed85c data/w_o_n/loot_tables/blocks/willow_pressure_plate.json
+d03468e0c9f77f4a5abeaa75fb91f74dadbbc0a5 data/w_o_n/loot_tables/blocks/willow_sapling.json
 887d682e88fa01fa2f4fa5bc1e0759b8310c0b6c data/w_o_n/loot_tables/blocks/willow_slab.json
 9a24e88cf5e2ef0c884ffbe32a22e446f1b6f7d9 data/w_o_n/loot_tables/blocks/willow_stairs.json
 7a85fb8240f283c7fb2d8326826cf153fb908cd8 data/w_o_n/loot_tables/blocks/willow_trapdoor.json

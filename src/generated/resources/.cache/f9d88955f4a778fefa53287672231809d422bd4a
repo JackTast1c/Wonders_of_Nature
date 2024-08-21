@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-20T14:48:14.6040803	Block States: w_o_n
+// 1.20.1	2024-08-21T23:39:51.9415019	Block States: w_o_n
 3c5466189cbd27bc7515ca7ac1d5f27d2b763753 assets/w_o_n/blockstates/redwood_button.json
 e1c95ba31fa05feb2b60dec94f47781c9f4be96e assets/w_o_n/blockstates/redwood_door.json
 0e0f3f72ecb08582f8403e9c619fd5bef18bef74 assets/w_o_n/blockstates/redwood_fence.json
@@ -23,6 +23,7 @@ d8e94de6cd8b95fa807bb3d64dd4586d5008fc6f assets/w_o_n/blockstates/willow_leaves.
 54088bae556ee89c01127d08597f5e4e3e86bd89 assets/w_o_n/blockstates/willow_log.json
 3c59c66c8758f6d453b6520786911bf84a79173e assets/w_o_n/blockstates/willow_planks.json
 c5be84406cdd1153a28ce7cebb12ba32ce82b18e assets/w_o_n/blockstates/willow_pressure_plate.json
+c2c4944c5d25702b0ab3c1f8757be0bf765186a3 assets/w_o_n/blockstates/willow_sapling.json
 d0799069f51b3fcae3aa02433676df794ae47e75 assets/w_o_n/blockstates/willow_slab.json
 02033d46ccab7e88f5eb26d65fad354e29ae7150 assets/w_o_n/blockstates/willow_stairs.json
 481948f21b3c6d8dff02b770216a308c848a0c61 assets/w_o_n/blockstates/willow_trapdoor.json
@@ -89,6 +90,7 @@ a741088176ad233682d5710a060c0f8f1e57b803 assets/w_o_n/models/block/willow_log.js
 7035d0adda30fd043f9f42db923e04e5fec491a4 assets/w_o_n/models/block/willow_planks.json
 6c333d82cc8526a7030b7d793d5e7b589ef4aa1d assets/w_o_n/models/block/willow_pressure_plate.json
 e34ff98e818616a92a9f18bb0424a2c65f0f879e assets/w_o_n/models/block/willow_pressure_plate_down.json
+5a670dbce6bb23b015633ca99ddebdd540e4b9df assets/w_o_n/models/block/willow_sapling.json
 d45eceebc5bcf5fe25e71cc702dca0f51e03653b assets/w_o_n/models/block/willow_slab.json
 bca53697ccdbb805970a07b707e9c14395015982 assets/w_o_n/models/block/willow_slab_top.json
 4eaa6a8cfde7733a2707611efeacb7c36f3e144f assets/w_o_n/models/block/willow_stairs.json

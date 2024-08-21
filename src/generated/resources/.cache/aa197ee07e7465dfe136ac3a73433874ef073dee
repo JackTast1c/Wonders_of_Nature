@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-20T15:10:59.9469486	Item Models: w_o_n
+// 1.20.1	2024-08-21T23:22:26.7957485	Item Models: w_o_n
 9f4125526086d01572c2095e2af8bbc43c8b7346 assets/w_o_n/models/item/redwood_button.json
 e89e7e0f706f7dde15ee95dc982d55b4cc9c6b34 assets/w_o_n/models/item/redwood_door.json
 7f3e92d48cfb5bcbdba5558c2eb367672e86fea3 assets/w_o_n/models/item/redwood_fence.json
@@ -6,10 +6,13 @@ e9465e1298fd4cd226c543caf26947306507fd69 assets/w_o_n/models/item/redwood_fence_
 9cc73689360b5a8855b290c7f2b3c1685b62d533 assets/w_o_n/models/item/redwood_pressure_plate.json
 9f2a01680f0e83795a8f6837393949d9d0f1a387 assets/w_o_n/models/item/redwood_slab.json
 82472bcb366e1a4c0e0bd43918f8eafb7afc5eca assets/w_o_n/models/item/redwood_stairs.json
+9472a7a8cbb981a191cbd1d6785401c68728c175 assets/w_o_n/models/item/redwood_trapdoor.json
 bbc22c4aa9319b4aec33631ee102256065853456 assets/w_o_n/models/item/willow_button.json
 873e1e1302ba15db1a44f5365310195175b9d88e assets/w_o_n/models/item/willow_door.json
 75ab0e5ab366ac435a0193866820a6138a1b3ffd assets/w_o_n/models/item/willow_fence.json
 aeba289a7c43fe541364af5e4b3eedde026ae50b assets/w_o_n/models/item/willow_fence_gate.json
 11b3ab3a679e795a1b2dab6ff4b10643ed1682bc assets/w_o_n/models/item/willow_pressure_plate.json
+adb98799d65aaa9d6e95a1661ce6eb91b6b4ecec assets/w_o_n/models/item/willow_sapling.json
 c15f1c3230f70e191b0095378668cbb2bb420498 assets/w_o_n/models/item/willow_slab.json
 a8d339bb023fd55552c482ce6c9a05e0c90fba2e assets/w_o_n/models/item/willow_stairs.json
+9e32b43d569428659546c77b81d3a7834212e10a assets/w_o_n/models/item/willow_trapdoor.json

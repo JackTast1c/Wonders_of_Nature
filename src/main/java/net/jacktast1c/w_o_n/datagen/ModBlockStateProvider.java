@@ -74,7 +74,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_WILLOW_WOOD);
         blockWithItem(ModBlocks.WILLOW_PLANKS);
         leavesBlock(ModBlocks.WILLOW_LEAVES);
+        saplingBlock(ModBlocks.WILLOW_SAPLING);
 
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {

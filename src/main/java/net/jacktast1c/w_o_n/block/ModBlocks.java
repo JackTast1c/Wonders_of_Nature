@@ -3,6 +3,7 @@ package net.jacktast1c.w_o_n.block;
 import net.jacktast1c.w_o_n.W_O_N;
 import net.jacktast1c.w_o_n.block.custom.ModFlammableRotatedPillarBlock;
 import net.jacktast1c.w_o_n.item.ModItems;
+import net.jacktast1c.w_o_n.worldgen.tree.willow_tree_grower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
@@ -357,6 +358,10 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+    public static final RegistryObject<Block> WILLOW_SAPLING = registerBlock("willow_sapling",
+            () -> new SaplingBlock(new willow_tree_grower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

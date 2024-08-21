@@ -31,7 +31,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.REDWOOD_SLAB);
         evenSimplerBlockItem(ModBlocks.REDWOOD_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.REDWOOD_FENCE_GATE);
-        evenSimplerBlockItem(ModBlocks.REDWOOD_TRAPDOOR);
+        trapdoorItem(ModBlocks.REDWOOD_TRAPDOOR);
 
 
 
@@ -44,8 +44,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.WILLOW_SLAB);
         evenSimplerBlockItem(ModBlocks.WILLOW_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.WILLOW_FENCE_GATE);
-        evenSimplerBlockItem(ModBlocks.WILLOW_TRAPDOOR);
+        trapdoorItem(ModBlocks.WILLOW_TRAPDOOR);
+        saplingItem(ModBlocks.WILLOW_SAPLING);
 
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(W_O_N.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     public void evenSimplerBlockItem(RegistryObject<Block> block) {

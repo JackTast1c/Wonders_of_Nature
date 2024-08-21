@@ -48,6 +48,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WILLOW_TRAPDOOR.get());
         this.dropSelf(ModBlocks.WILLOW_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.WILLOW_BUTTON.get());
+        this.dropSelf(ModBlocks.WILLOW_SAPLING.get());
 
         this.add(ModBlocks.WILLOW_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.WILLOW_SLAB.get()));
@@ -55,7 +56,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createDoorTable(ModBlocks.WILLOW_DOOR.get()));
 
         this.add(ModBlocks.WILLOW_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.WILLOW_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change this shi' to the sapling
+                createLeavesDrops(block, ModBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
     }
 
