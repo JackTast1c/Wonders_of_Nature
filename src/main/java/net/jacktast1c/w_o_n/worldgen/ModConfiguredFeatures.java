@@ -27,7 +27,7 @@ public class ModConfiguredFeatures {
 
         register(context, WILLOW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.WILLOW_LOG.get()),
-                new ForkingTrunkPlacer(8, 2, 2),
+                new ForkingTrunkPlacer(6, 3, 3),
                 BlockStateProvider.simple(ModBlocks.WILLOW_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 3)).build());
