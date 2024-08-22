@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "w_o_n:block/redwood_bark_slab"
+    },
+    "type=double": {
+      "model": "w_o_n:block/redwood_log"
+    },
+    "type=top": {
+      "model": "w_o_n:block/redwood_bark_slab_top"
+    }
+  }
+}

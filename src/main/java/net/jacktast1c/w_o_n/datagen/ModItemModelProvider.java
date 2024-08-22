@@ -29,6 +29,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         evenSimplerBlockItem(ModBlocks.REDWOOD_STAIRS);
         evenSimplerBlockItem(ModBlocks.REDWOOD_SLAB);
+        evenSimplerBlockItem(ModBlocks.REDWOOD_BARK_STAIRS);
+        evenSimplerBlockItem(ModBlocks.REDWOOD_BARK_SLAB);
         evenSimplerBlockItem(ModBlocks.REDWOOD_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.REDWOOD_FENCE_GATE);
         trapdoorItem(ModBlocks.REDWOOD_TRAPDOOR);

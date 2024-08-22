@@ -1,4 +1,6 @@
-// 1.20.1	2024-08-21T23:39:51.9415019	Block States: w_o_n
+// 1.20.1	2024-08-22T09:57:52.174825	Block States: w_o_n
+55599bcf6a8c411eb8d4934f4674856ba08f6c16 assets/w_o_n/blockstates/redwood_bark_slab.json
+420cb9184f70ecccc0a2276b7df540ea9edd0a78 assets/w_o_n/blockstates/redwood_bark_stairs.json
 3c5466189cbd27bc7515ca7ac1d5f27d2b763753 assets/w_o_n/blockstates/redwood_button.json
 e1c95ba31fa05feb2b60dec94f47781c9f4be96e assets/w_o_n/blockstates/redwood_door.json
 0e0f3f72ecb08582f8403e9c619fd5bef18bef74 assets/w_o_n/blockstates/redwood_fence.json
@@ -28,6 +30,11 @@ d0799069f51b3fcae3aa02433676df794ae47e75 assets/w_o_n/blockstates/willow_slab.js
 02033d46ccab7e88f5eb26d65fad354e29ae7150 assets/w_o_n/blockstates/willow_stairs.json
 481948f21b3c6d8dff02b770216a308c848a0c61 assets/w_o_n/blockstates/willow_trapdoor.json
 825c77b5545351234b4b40693dc45a5e113fa949 assets/w_o_n/blockstates/willow_wood.json
+63d999fae0faa3cd7c1f5eeb0284ea1a51628e67 assets/w_o_n/models/block/redwood_bark_slab.json
+3f303b735bc131210b3841fc1b1f5ae681dff7bb assets/w_o_n/models/block/redwood_bark_slab_top.json
+b3fa7739a3978b2abc97da765048dfe181ec945f assets/w_o_n/models/block/redwood_bark_stairs.json
+428ae9e43790f90bfd108b0bec27450f8153acd9 assets/w_o_n/models/block/redwood_bark_stairs_inner.json
+55d604b2d08e690a8f1a75f5f24a13ff0f17fa68 assets/w_o_n/models/block/redwood_bark_stairs_outer.json
 97878dd14d28089fa4be5a59daf8b94e61db7ae9 assets/w_o_n/models/block/redwood_button.json
 51ef7e8fdbfcfb7bc888a76d0bbd98e1588b759f assets/w_o_n/models/block/redwood_button_pressed.json
 1f9cc962ef93b45e41c1cc83e4674df727141f29 assets/w_o_n/models/block/redwood_door_bottom_left.json
