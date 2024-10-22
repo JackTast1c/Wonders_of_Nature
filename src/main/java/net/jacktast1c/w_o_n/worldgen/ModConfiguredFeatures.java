@@ -2,6 +2,7 @@ package net.jacktast1c.w_o_n.worldgen;
 
 import net.jacktast1c.w_o_n.W_O_N;
 import net.jacktast1c.w_o_n.block.ModBlocks;
+import net.jacktast1c.w_o_n.worldgen.tree.custom.WillowTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -12,12 +13,9 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer;
 
 public class ModConfiguredFeatures {
 
@@ -27,9 +25,9 @@ public class ModConfiguredFeatures {
 
         register(context, WILLOW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.WILLOW_LOG.get()),
-                new ForkingTrunkPlacer(6, 3, 3),
+                new WillowTrunkPlacer(4, 1, 2),
                 BlockStateProvider.simple(ModBlocks.WILLOW_LEAVES.get()),
-                new CherryFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new CherryFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 3)).build());
 
     }

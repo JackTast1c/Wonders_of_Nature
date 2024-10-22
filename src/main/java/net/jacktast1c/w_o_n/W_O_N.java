@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.jacktast1c.w_o_n.block.ModBlocks;
 import net.jacktast1c.w_o_n.item.ModCreativeModeTabs;
 import net.jacktast1c.w_o_n.item.ModItems;
+import net.jacktast1c.w_o_n.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -35,6 +36,8 @@ public class W_O_N
         ModItems.register(modEventBus);
 
         ModBlocks.register(modEventBus);
+
+        ModTrunkPlacerTypes.register(modEventBus);
 
 
 
