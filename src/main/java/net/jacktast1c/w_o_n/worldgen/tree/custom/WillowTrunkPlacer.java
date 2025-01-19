@@ -38,62 +38,75 @@ public class WillowTrunkPlacer extends TrunkPlacer {
         int height = pFreeTreeHeight + pRandom.nextInt(heightRandA, heightRandA + 1) + pRandom.nextInt(heightRandB - 1, heightRandB + 1);
         for(int i = 0; i < height; i++) {
             placeLog(pLevel, pBlockSetter, pRandom, pPos.above(i), pConfig);
+            
+            if(i % 3 == 0 && pRandom.nextBoolean()) {
 
-            int h = i+3;
-            if(i % 2 == 0 && pRandom.nextBoolean()){
+                int h = i+3;
+                boolean canItGenerate = h < height-2;
 
-                if(pRandom.nextFloat() > 0.25f) {
-                    for(int x = 0; x < 3; x++) {
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 2), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 3), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 3).relative(Direction.Axis.Y, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));}}
-                if(pRandom.nextFloat() > 0.25f) {
-                    for(int x = 0; x < 3; x++) {
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 2), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 3), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 3).relative(Direction.Axis.Y, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));}}
-                if(pRandom.nextFloat() > 0.25f) {
-                    for(int x = 0; x < 3; x++) {
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 2), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 3), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 3).relative(Direction.Axis.Y, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));}}
-                if(pRandom.nextFloat() > 0.25f) {
-                    for(int x = 0; x < 3; x++) {
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 2), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 3), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
-                        pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 3).relative(Direction.Axis.Y, 1), ((BlockState)
-                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));}}
+                if(canItGenerate) {
+
+                    if (pRandom.nextFloat() > 0.5f) {
+                        for (int x = 0; x < 3; x++) {
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 2), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 3), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, 3).relative(Direction.Axis.Y, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));
+                        }
                     }
+                    if (pRandom.nextFloat() > 0.5f) {
+                        for (int x = 0; x < 3; x++) {
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 2), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 3), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, 3).relative(Direction.Axis.Y, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));
+                        }
+                    }
+                    if (pRandom.nextFloat() > 0.5f) {
+                        for (int x = 0; x < 3; x++) {
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 2), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 3), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, 3).relative(Direction.Axis.Y, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));
+                        }
+                    }
+                    if (pRandom.nextFloat() > 0.5f) {
+                        for (int x = 0; x < 3; x++) {
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 2), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 3), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
+                            pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, 3).relative(Direction.Axis.Y, 1), ((BlockState)
+                                    Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Y))));
+                        }
+                    }
+                }
+            }
             }
 //            if(i % 2 == 0 && pRandom.nextBoolean()){
 //                if(pRandom.nextFloat() > 0.25f) {
 //                    for(int x = 0; x < 4; x++) {
-//                        pBlockSetter.accept(pPos.above(i).relative(Direction.NORTH, x), ((BlockState)
+//                        pBlockSetter.accept(pPos.above(h).relative(Direction.NORTH, x), ((BlockState)
 //                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-//                        pBlockSetter.accept(pPos.above(i).relative(Direction.SOUTH, x), ((BlockState)
+//                        pBlockSetter.accept(pPos.above(h).relative(Direction.SOUTH, x), ((BlockState)
 //                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.Z))));
-//                        pBlockSetter.accept(pPos.above(i).relative(Direction.EAST, x), ((BlockState)
+//                        pBlockSetter.accept(pPos.above(h).relative(Direction.EAST, x), ((BlockState)
 //                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
-//                        pBlockSetter.accept(pPos.above(i).relative(Direction.WEST, x), ((BlockState)
+//                        pBlockSetter.accept(pPos.above(h).relative(Direction.WEST, x), ((BlockState)
 //                                Function.identity().apply(pConfig.trunkProvider.getState(pRandom, pPos).setValue(RotatedPillarBlock.AXIS, Direction.Axis.X))));
 //                    }
 //                }
